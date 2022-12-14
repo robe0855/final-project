@@ -419,8 +419,6 @@ th:nth-child(odd){
 
 
     /* / DESKTOP STYLES HERE /
-
-
     / NAVIGATION SECTION / */
 nav .grid-container {
     display: grid;
@@ -469,7 +467,7 @@ nav .grid-container {
     /*ABOUT SECTION */
 
    .aboutimage {
-    width: 50%;
+    width: 25%;
     float: left;
    }
 
@@ -477,15 +475,94 @@ nav .grid-container {
    .section-about {
     background-color: #ffe6ac;
     display: grid;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    height: 50%;
+   
     }
+
+    #abt{
+        width: 40em;
+    }
+
+    #abt01{
+        float: right;
+        margin-right: 7em;
+    }
+    #abt02{
+        
+        margin-left: 41em;
+        margin-top: -15em;
+        font-size: 14px;
+        
+    }
+ .jack{
+    width: 43em;
+    position: ;
+ }
+ .john{
+    width: 100%;
+    height: 56em;
+
+
+ }
+ .robert{
+    width: 567px;
+    height: 403px;
+    margin-left: 43em;
+    margin-top: -1000px;
+    margin-bottom: 58px;
+ }
+ .Bob{
+    background-color: transparent;
+ }
+ #b1{
+    width: 40em;
+    margin-top: -465px;
+    font-size: 40px;
+}
+
+.ceo2{
+    margin-left: -40em;
+    left: 620px;
+}
+#bobby{
+    
+    margin-right: 41em;
+    margin-top: 15em;
+    font-size: 14px;
+    
+}
+    
+hr{
+    width: 520px;
+    margin-left: 617px;
+}
+#j1{
+    margin-left: 620px;
+    margin-top: -10em;
+    font-size: 40px;
+}
+#ceo{
+    margin-left: 617px;
+
+}
+#ownertext{
+    margin-left: 617px;
+    font-size: 16px;
+
+}
+
+
 
 
    .serviceimage {
     width: 50%;
    }
 
+.section-contact{
+    margin-top: -46em;
+}
 }
 
 /*MAP*/
@@ -495,7 +572,7 @@ nav .grid-container {
 }
 .location{
     display: flex;
-    margin-right: 3em;
+    margin-right: 20px;
 }
 
 .column2{
@@ -529,14 +606,3 @@ nav .grid-container {
 .serviceflex .block:nth-child(3) { grid-area: c}
 .serviceflex .block:nth-child(4) { grid-area: d}
 .serviceflex .block:nth-child(5) { grid-area: e}
-
-
-
-
-
-
-
-
-
-
-
