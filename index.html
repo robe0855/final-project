@@ -5,127 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
+<!--spacing for the heading. -->
+    <nav>
+        <div class = "container grid-container">
+            <div class="logo">
 
-        <nav>
-        <div class = "container">
-            <img src= "images/logo.png" alt="three star media">
+            <img src= "images/logo.png" alt="threestarmedia">
+            </div>
+           
         <ul> 
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Services</a></li>
-            <li><a href="index.html">Team</a></li>
-            <li><a href="index.html">Contact</a></li>
+            <li class="current"> <a href="#">Home</a></li>
+            <li><a href="#About Us">About Us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Team">Team</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
         
         <form> 
-        <input type = "search">
         
-        /*Add more things there*/
+        <input type = "text" id="search" name="search" placeholder="Search">
+        
+
         
         <button> &#128269; </button>
-        /*Font*/
+        
         
         
         </form>
         
         
-        </div> <!-- end container-->
-        </nav>
+         <!-- End container-->
+    </nav>
         
         <div class = "header-welcome">
             <div class ="container">
+                
                 <h1> Welcome to Three star media </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!
         </p>
         
-        <button> Connect with us ▶</button>
+        <a href="#" class="button">Connect with us ▶</a> 
+        </div> <!-- End container-->
+        </div>
+    
         
-            </div> <!-- end container-->
-        </div> <!-- end container-->
         
         </header>
         <main>
-        
+            <div class = "container">
         <section class = "section-about">
-        <div class = "container">
-            <img src= "images/main-banner.jpg"
-             alt="three star media">
-             <img src= "images/about-us.jpg"
-        alt="three star media"> 
-            <h2> About Us </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+            <div class="about-left">
+                <img id="abt" src="images/about-us.jpg" alt="aboutusbanner">
+                
+            <h2 id="abt01">About Us</h2>
+        
+            <p id="abt02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+
+                 
         
         
-        </div> <!-- end container -->
+        </div> <!-- end containers -->
         
         </section> <!-- end section-about -->
         
-        <!-- heading and paragraphs on the right
-        using flexbox. grid is optional alternative but flexbox is unidirectional
-        yup -->
         
-        
-        <!-- observes these text sizes and break down the sections, 
-        5 sections of the total code -->
-        
-        
-        <!-- the order matters with the text size, especially at the
-        bottom. order tag in css is a hint from the prof -->
-        
-        
-        <section class = "section-services">
+
+<section class = "section-services">
+    
         <div class = "container">
-            <h3>Our Services</h3>
-            <div><img src= "images/digital.jpg"
-        alt="three star media"> 
-
-        <header>Digital Transformation</header>
-        <p>Digital Transformation
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-
-        <button> Digital Plans ▶</button>
-        </div>
-
-        <div><img src= "images/marketing.jpg"
-        alt="three star media">
-        <header>Marketing</header>
-        <p>Digital Transformation
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-
-        <button> Marketing Plans ▶</button>
-        </div>
+        <h2 id="service"> Our Services</h2>
+<div class="serviceflex">
         
-        <div><img src= "images/video.jpg"
-        alt="three star media">
-        <header>Video Production</header>
-        <p>Digital Transformation
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+        <div class="container" alt="a">
+    
+    
+        <div class="digital-transformation">
+        <img src="images/digital.jpg" alt="laptop-open" class="laptop-open">
 
-        <button> Video Plans ▶</button>
-        </div>
-        <div><img src= "images/web.jpg"
-        alt="three star media">
-        <header>Web Development</header>
-        <p>Digital Transformation
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+    
+<h3>Digital Transformation</h3>
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+<a href="#" class="button1">Digital Plans ▶</a>
+    </div>
+    </div>
+    
 
-        <button> Web Plans ▶</button>
-        </div>
 
-        <img src= "images/print.jpg"
-        alt="three star media">
-        <header>Print</header>
-        <p>Digital Transformation
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
 
-        <button> Print Plans ▶</button>
-        
-        <!-- h2 headin, five div's each with h3, image, text and button
-        on a grid -->
+<div class="container" alt="b">
+<div class="marketing">
+
+
+<img src="images/marketing.jpg" alt="market" class="market">
+<h3>Marketing</h3>
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi? </p>
+<a href="#" class="button1">Marketing Plans ▶</a>
+</div>
+</div>
+
+
+
+<div class="container" alt="c">
+<div class="video-production">
+<img src="images/video.jpg" alt="video-screen" class="video-screen">
+    <h3>Video Production</h3>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+    <a href="#" class="button1">Video Plans ▶</a>
+</div>
+</div>
+
+
+<div class="container" alt="d">
+<div class="web-dev">
+
+    <img src="images/web.jpg" alt="phone" class="phone">
+<h3>Web Developement</h3>
+
+<p id="p1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+<a href="#" class="button1">Web Plans ▶</a>
+</div>
+</div>
+
+
+
+<div class="container" alt="e">
+<div class="print">
+    <img src="images/print.jpg" alt="print-box" class="print-box">
+    <h3>Print</h3>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+    <a href="#" class="button1">Print Plans ▶</a>
+</div>
+    </div>
+
+
+        <!-- h2 heading, -->
         
         </div> <!-- end container -->
         
@@ -136,41 +161,45 @@
         
         <section class = "section-vision">
         <div class = "container">
-            <h4>Our Vision</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
+        <!-- h3, paragraph and button -->
+       <h3 id="vis">Our Vision</h3>
+       <p id="pis">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
+        <a href="#" class="button2">Learn More ▶</a>
+       
 
-        <button> Learn More ▶</button>
-        <img src= "images/vision.jpg"
-        alt="three star media">
-
-        <-- h3, paragraph and button -->
-        
-        </div> <!-- end container -->
+        </div> <!-- endcontainer -->
         
         </section> <!-- end section-vision -->
+</div>
         
         
         
         
         <section class = "section-team">
         <div class = "container">
-            <h5>Our Team</h5>
-            <img src= "images/john.jpg"
-        alt="three star media">
-        <header>John Doe</header>
-        <div>CEO and Co-owner</div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-
-        <img src= "images/bob.jpg"
-        alt="three star media">
-        <header>Bob Rite</header>
-        <div>CFO and Co-owner</div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-
+        <h2>Our Team</h2>
         
-        <!-- h2, two div's with an image, two divs h3 h4 paragraph of text on a grid -->
+        <div class="john">
+        
+
+        <img src="images/john.jpg" alt="jack" class="jack">
+        <h3 id="j1">John Doe</h3>
+        <h4 id="ceo">CEO and Co-owner</h4>
+        <hr>
+        <p id="ownertext">Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+    
+    </div>
+    <br>
+
+    <div class="Bob">
+        <img src="images/bob.jpg" alt="robert" class="robert">
+<h3 id="b1">Bob Rite</h3>
+<h4 id="ceo">CFO and Co-owner</h4>
+<hr>
+<p id="ownertext">Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+    </div>
+    </div>
+        <!-- h2, 2 div's with an image, 2 divs h3 h4 paragraph of text ON A GRID -->
         </div> <!-- end container -->
         
         </section> <!-- end section-team -->
@@ -180,95 +209,71 @@
         
         
         <section class = "section-contact">
-        <div class = "container">
-            <h6> Contact Us</h6>
-        </div>
-
-            <div>Send us a message</div>
-
+            <div class = "container">
+    
+            <h2>Contact Us</h2>
+            <h3 id="messages">Send us a message</h3>
+            <form action="/action_page.php">
+                <label for="jname"> Full Name</label><br>
+                <input type="text" id="name" name="Type name" > <br>
+                <label for="pname">Email</label><br>
+                <input type="text" id="pname" name="Your Email">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
             
-                <div class="containerforquestions">
-                <div class="container">
-                    <header>Full Name</header>
-                    <form action="/action_page.php">
-                        <input style="height: 23px;" type="text" id="fname1" name="fname2" size="136"> <br><br>
-                    </form>
+    <button id="BUTTON3">Send</button>
         
-                </div>
-                </div>
 
-            <body>
-                <div class="containerforquestions">
-                <div class="container">
-                    <header>Email</header>
-                    <form action="/action_page.php">
-                        <input style="height: 23px;" type="text" id="fname3" name="fname4" size="136"> <br><br>
-                    </form>
-            </div>
-            </div>
-            </body>
-            
-                <div class="containerforquestions">
-                <div class="containerformessage">
-                    <head>Message</head>
-                    
-                </div>
-                </div>
-            
-            
-            
-                <div class="containerforquestions">
-                <div class="container">
-                    <form action="/action_page.php">
-                        <input style="height: 100px;" type="text" id="fname5" name="fname6" size="136"> <br><br>
-                    </form>
-            </div>
 
-        <button>Send</button>
+             
+            </div>
+            <h3>Hours of operation</h3>
+            
+        <table style="width: 100%;">
 
-        <header>Hours of operation</header>
-        <table>
-            <caption>Student Information</caption>
-            <thead>
-              <tr>
-                <th>Days</th>
-                <th>Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>
-              </tr>
-              <tr>
-                <td>Saturday - Sunday</td>
+            <tr style= "height: 38px">
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+                <tr style="height: 40px;">
+                    <td>Monday-Friday</td>
+                    <td>9 AM - 6 PM</td>
+                </tr>
+                <tr style="height: 40px;">
+                <td>Saturday-Sunday</td>
                 <td>Closed</td>
-              </tr>
-            </tbody>
-          </table>
+            </tr>
+        </table>
+        
+        <div class="location">
+        <div class="column"></div>
+            <div class="column">
 
-          <div>Location</div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d11215.752178943023!2d-75.7528188!3d45.3500629!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1669793044408!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="frame" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9629.285270507165!2d-75.75555383017875!3d45.35106627917802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1671002662948!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <!-- h2, google map embed, and a table -->
+     <table style="width: 100%;">
+  
+</form>
+        </div> <!-- ending container -->
         
-        
-        <!-- h2, a form, google map embed, table on a grid -->
-        
-        </div> <!-- end container --> <!-- end container-->
-        
-         <!-- end section-contact -->
+        </section> <!-- ending section-contact -->
         
         </main>
-</body>
-        <footer>
-        <div class = "container">
-        </div>
-        
-        <!-- two paragraphs of text -->
-        
-<footer1>© Copyright Three Star Media, 2020</footer1>
-        
-<footer2>All images are taken from Unsplash</footer2>
-        
-        </footer>       
+        <footer> 
+        <div class = "containerfoot">
+        <p>Copyright Three Star Media,2020</p>
+        <br>
+        <p>All images are taken from
+        <a id="splashay" href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+</div>
 
+        
+        
+        </footer>
+        
+        
+</body>
 </html>
+
